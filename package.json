@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "@whallin/spotify-last-played",
+  "description": "A Cloudflare Worker for fetching the last played track from Spotify",
+  "type": "module",
+  "version": "1.0.0",
+  "homepage": "https://github.com/whallin/spotify-last-played",
+  "bugs": {
+    "url": "https://github.com/whallin/spotify-last-played",
+    "email": "william@hallin.media"
+  },
+  "license": "UNLICENSED",
+  "author": {
+    "name": "William Hallin",
+    "url": "https://hallin.media",
+    "email": "william@hallin.media"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whallin/spotify-last-played.git"
+  },
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"wrangler": "^3.107.1"
+	}
+}

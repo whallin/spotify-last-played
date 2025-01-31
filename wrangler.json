@@ -1,0 +1,28 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "spotify-last-played",
+	"main": "src/index.js",
+	"compatibility_date": "2025-01-29",
+	"observability": {
+		"enabled": true
+	},
+	"placement": { 
+    "mode": "smart" 
+  },
+  "kv_namespaces": [
+    {
+      "binding": "lastPlayedJSON",
+      "id": "SPOTIFY_LAST_PLAYED"
+    },
+    {
+      "binding": "spotifyAccessToken",
+      "id": "SPOTIFY_LAST_PLAYED"
+    }
+  ],
+  "triggers": {
+    "crons": [
+      "0 */1 * * *",
+      "*/10 * * * *"
+    ]
+  }
+}
