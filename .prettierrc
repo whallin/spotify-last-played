@@ -36,19 +36,6 @@
         "parser": "markdown",
         "proseWrap": "preserve"
       }
-    },
-    {
-      "files": ["*.svelte"],
-      "options": {
-        "parser": "svelte"
-      }
-    },
-    {
-      "files": ["*.astro"],
-      "options": {
-        "parser": "astro",
-        "printWidth": 100
-      }
     }
   ]
 }
