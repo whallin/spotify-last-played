@@ -9,16 +9,6 @@
 	"placement": { 
     "mode": "smart" 
   },
-  "kv_namespaces": [
-    {
-      "binding": "lastPlayedJSON",
-      "id": "SPOTIFY_LAST_PLAYED"
-    },
-    {
-      "binding": "spotifyAccessToken",
-      "id": "SPOTIFY_LAST_PLAYED"
-    }
-  ],
   "triggers": {
     "crons": [
       "0 */1 * * *",
