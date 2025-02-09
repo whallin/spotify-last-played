@@ -46,6 +46,7 @@ export default {
           await env.lastPlayedJSON.put(
             'lastPlayedJSON',
             JSON.stringify({
+              timestamp: new Date().toISOString(),
               name: data.items[0].track.name,
               artist: data.items[0].track.artists[0].name,
               album_cover: data.items[0].track.album.images[2].url,
