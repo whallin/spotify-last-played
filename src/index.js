@@ -71,7 +71,7 @@ export default {
           status: 404,
           headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'https://hallin.media',
           },
         });
       }
@@ -81,7 +81,7 @@ export default {
         headers: {
           'Content-Type': 'application/json',
           'Cache-Control': 'public, max-age=600',
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': 'https://hallin.media',
         },
       });
     } catch (error) {
@@ -90,7 +90,7 @@ export default {
         status: error.status || 500,
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': 'https://hallin.media',
         },
       });
     }
