@@ -120,7 +120,7 @@ export default {
         return new Response(JSON.stringify({ error: 'No data available' }), {
           status: 404,
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json; charset=utf-8',
             'Access-Control-Allow-Origin': 'https://hallin.media',
           },
         });
@@ -129,7 +129,7 @@ export default {
       return new Response(lastPlayed, {
         status: 200,
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json; charset=utf-8',
           'Cache-Control': 'public, max-age=600',
           'Access-Control-Allow-Origin': 'https://hallin.media',
         },
@@ -139,7 +139,7 @@ export default {
       return new Response(JSON.stringify({ error: error.message || 'Internal server error' }), {
         status: error.status || 500,
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json; charset=utf-8',
           'Access-Control-Allow-Origin': 'https://hallin.media',
         },
       });
